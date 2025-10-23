@@ -180,7 +180,7 @@ app = FastAPI(title="JobProfile API", version="1.0")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
-    allow_credentials=True,
+    allow_credentials=["*"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -439,3 +439,4 @@ def predict(profile: ProfileInput):
     )
     print("return:", {"input_skills": profile.skills, "recognized_skills": recognized_skills, "result": prediction})
     return {"input_skills": profile.skills, "recognized_skills": recognized_skills, "result": prediction}
+
