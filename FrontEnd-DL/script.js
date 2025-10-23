@@ -2,7 +2,7 @@
 // Config
 // =============================
 //const API_BASE = "http://127.0.0.1:8000";
-const apiUrl = "https://radar-metier-zerx.onrender.com";
+const apiUrl = "https://radar-fil-rouge.onrender.com";
 
 
 let selectedSkillsCodes = [];
@@ -1210,3 +1210,4 @@ function writeRncpBlocks() {
     }
   });
 });
+
